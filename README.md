@@ -175,5 +175,5 @@ The application started listening on `http://127.0.0.1:8000`.
 ### Step 9 — Customize Application Homepage
 The landing page was customized by modifying `resources/views/welcome.blade.php`. Custom CSS and dynamic Carbon date formatting were included to present student metadata cleanly.
 
-![Custom Homepage](screenshots/homepage.jpg)  
+![Custom Homepage](screenshots/homepage.png)  
 *Figure 8. Customized Laravel application landing page.*
