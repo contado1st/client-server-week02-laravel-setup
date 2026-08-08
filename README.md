@@ -13,14 +13,13 @@
 ## 2. Introduction
 
 ### Overview of Laravel
-Laravel is a robust, open-source framework built for PHP that simplifies backend web development through modern architectural patterns. By leveraging the Model-View-Controller (MVC) design pattern, it abstracts complex low-level operations such as request routing, database connectivity, and dynamic page rendering into intuitive, readable components. This allows developers to build maintainable, full-stack web applications without reinventing core infrastructure.
+Laravel is an open-source PHP framework designed to streamline web development by using the Model-View-Controller (MVC) pattern. It handles complex backend operations—such as URL routing, database connections, and dynamic Blade template rendering—with clear, readable code. This framework allows developers to build maintainable, full-stack applications efficiently without building core server infrastructure from scratch.
 
 ### Importance of Client-Server Technologies
-Modern web applications rely on client-server architecture to separate user interaction from backend logic. In this model, the client interface (the web browser) submits requests over a network, while the backend server processes business logic, executes database operations, and delivers the appropriate response back to the client. Gaining hands-on experience with configuring local web runtimes and database servers provides essential insight into how distributed software systems operate in real-world deployments.
+Client-server architecture is essential to modern web applications because it separates user interface components from backend processing logic. In this setup, the client browser issues HTTP requests over a network, and the server processes the request, manages database entries, and sends back the appropriate web view. Setting up a local web server and database environment provides practical experience with the mechanics of distributed software systems used in professional settings.
 
 ### Purpose of the Project
-Developed as part of the ITST 302 Client-Server Technologies curriculum, this activity focuses on establishing and validating a complete local backend environment. The objective is to assemble a working development stack consisting of PHP, Composer, the Laravel CLI, MySQL, and Git. The workflow involves initializing a fresh Laravel instance, launching the Artisan development server, modifying Blade views to serve customized student information, and tracking all setup stages across a public Git repository.
-
+Prepared as part of the ITST 302 Client-Server Technologies course, this setup activity focuses on building and verifying a complete local development environment for the client-server-week02-laravel-setup project. The main goal is to assemble a functional stack including PHP 8.4, Composer, the global Laravel CLI, MySQL, and Git. The overall workflow involves initializing a new Laravel project, hosting it on the local Artisan server, updating resources/views/welcome.blade.php to present customized student information, and documenting each stage across a public GitHub repository.
 ---
 
 ## 3. Objectives
