@@ -276,3 +276,32 @@ Another application on the system (such as Skype, a different local server like 
 | **Homepage** | ![Homepage](screenshots/homepage.png) | Displays the final customized Laravel homepage view for my project |
 
 ---
+
+## 10. Reflection
+
+
+### What did you learn?
+
+Throughout this project, I gained a comprehensive understanding of how to set up and configure a professional full-stack development environment from scratch. Specifically, I learned how to install and verify essential tools like PHP, Composer, Git, and MySQL server using the PowerShell terminal. I also learned how to use the global Laravel installer to scaffold a brand-new project workspace, manage dependencies, and launch a local web server using Laravel Artisan (php artisan serve). Additionally, customizing the default welcome view helped me understand how Laravel handles front-end presentation and routing.
+
+### What challenges did you encounter?
+
+The primary challenge I faced during the setup process involved system path configurations, specifically with MySQL. When running the `mysql --version` command, PowerShell threw a path error because the system did not automatically recognize the MySQL executable binary. I had search up the solution and to manually access the Windows Environment Variables, locate the MySQL bin directory path (C:\Program Files\MySQL\MySQL Server 8.0\bin), and update the system PATH variable. Encountering and resolving issues like command-not-found errors, execution policies, and missing application keys taught me the importance of careful configuration management and systematic troubleshooting.
+
+### Why is Laravel important in client-server development?
+
+Laravel plays a crucial role in modern client-server development by providing a powerful, elegant syntax and a robust MVC (Model-View-Controller) architecture. Instead of building every backend feature such as routing, security token management, and database connections from scratch, Laravel provides these tools out of the box. This standardization allows developers to focus on building unique application logic while ensuring that the client-side interface and server-side logic communicate securely and efficiently.
+
+### How will this knowledge help you in future software development projects?
+
+The foundational skills acquired during this setup will serve as a reliable blueprint and experience for all my future web development projects. Knowing how to properly configure a local server environment, manage package dependencies with Composer, utilize Git for version control, and troubleshoot common runtime errors will drastically reduce setup time. Furthermore, mastering Laravel's environment structure gives me a strong head start in building secure, dynamic, and scalable database-driven web applications as I continue advancing in my information technology studies.
+
+---
+
+## 11. References 
+
+* Composer. (n.d.). *Composer documentation*. https://getcomposer.org/doc/
+* Git. (n.d.). *Git documentation*. https://git-scm.com/doc
+* Laravel. (n.d.). *Laravel documentation*. https://laravel.com/docs
+* Oracle. (n.d.). *MySQL 8.0 reference manual*. https://dev.mysql.com/doc/refman/8.0/en/
+* PHP Group. (n.d.). *PHP documentation*. https://www.php.net/docs.php
