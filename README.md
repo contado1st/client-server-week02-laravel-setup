@@ -97,7 +97,7 @@ composer -v
 This output confirmed Composer version 2.9.5 was operating on top of the PHP runtime.
 
 [Composer Version](screenshots/composer-version.jpg)  
-*Figure 2. Verification of Composer dependency manager.
+*Figure 2. Verification of Composer dependency manager.*
 
 ---
 
