@@ -82,5 +82,5 @@ php -v
 
 This confirmed that PHP 8.4.21 was active and properly recognized in the system terminal.
 
-![PHP Version](screenshots/php-version.png)  
+![PHP Version](screenshots/php-version.jpg)  
 *Figure 1. Verification of PHP 8.4.21 installation.*
