@@ -12,11 +12,14 @@
     <div class="max-w-2xl mx-auto mt-8 sm:mt-12">
         
         <h1 class="text-2xl sm:text-3xl font-bold mb-8 uppercase text-center border-b-2 border-gray-200 pb-4">
-            Laravel Setup Activity
+            <span class="text-red-700">Laravel</span> Setup Activity
         </h1>
 
-        <div class="bg-gray-50 p-6 sm:p-8 rounded-lg border border-gray-200">
-            <h2 class="text-xl font-semibold mb-6 underline decoration-2 decoration-gray-300 underline-offset-4">
+        <!-- Added gold (amber) top border and a subtle shadow for a professional document look -->
+        <div class="bg-gray-50 p-6 sm:p-8 rounded-lg border border-gray-200 border-t-4 border-t-amber-500 shadow-sm">
+            
+            <!-- Replaced the underline with a sleek red left-border highlight -->
+            <h2 class="text-xl font-semibold mb-6 text-gray-800 border-l-4 border-red-700 pl-3">
                 Student Informations:
             </h2>
 
@@ -49,7 +52,7 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-4 mt-6 pt-4 border-t border-gray-200">
                     <div class="font-bold text-gray-700">Current Date:</div>
-                    <div class="sm:col-span-2">8/8/2026</div>
+                    <div class="sm:col-span-2 font-semibold text-gray-900">8/8/2026</div>
                 </div>
                 
             </div>
