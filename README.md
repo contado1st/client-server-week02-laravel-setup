@@ -96,7 +96,7 @@ composer -v
 
 This output confirmed Composer version 2.9.5 was operating on top of the PHP runtime.
 
-[Composer Version](screenshots/composer-version.jpg)  
+![Composer Version](screenshots/composer-version.jpg)  
 *Figure 2. Verification of Composer dependency manager.*
 
 ---
@@ -175,5 +175,5 @@ The application started listening on `http://127.0.0.1:8000`.
 ### Step 9 — Customize Application Homepage
 The landing page was customized by modifying `resources/views/welcome.blade.php`. Custom CSS and dynamic Carbon date formatting were included to present student metadata cleanly.
 
-![Custom Homepage](screenshots/homepage.jpgS)  
+![Custom Homepage](screenshots/homepage.jpg)  
 *Figure 8. Customized Laravel application landing page.*
