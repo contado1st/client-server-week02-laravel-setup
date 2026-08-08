@@ -108,7 +108,7 @@ The global Laravel CLI tool was verified using:
 laravel -V
 ```
 
-This confirmed Laravel Installer 5.27.0 was installed and ready to scaffold new applications.
+This confirmed Laravel Installer 5.25.1 was installed and ready to scaffold new applications.
 
 ![Laravel Version](screenshots/laravel-version.jpg)  
 *Figure 3. Verification of global Laravel CLI.*
@@ -123,6 +123,7 @@ git --version
 ```
 
 ![Git Version](screenshots/git-version.jpg)  
+This confirmed Git version 2.54.0.windows.1 was active and ready for source code management.
 *Figure 4. Verification of Git version control system.*
 
 ---
@@ -134,7 +135,7 @@ MySQL binary availability was verified in the terminal using:
 mysql --version
 ```
 
-This confirmed MySQL Community Server 8.0.44 was properly bound to the system PATH.
+This confirmed MySQL Community Server 8.0.45 was properly bound to the system PATH.
 
 ![MySQL Version](screenshots/mysql-version.jpg)  
 *Figure 5. Verification of MySQL database server.*
@@ -142,7 +143,7 @@ This confirmed MySQL Community Server 8.0.44 was properly bound to the system PA
 ---
 
 ### Step 6 — Verify Visual Studio Code Setup
-The project folder was opened in Visual Studio Code to verify workspace configurations and workspace extensions.
+The project workspace was opened inside Visual Studio Code to verify folder structures and editor extensions.
 
 ![VS Code Setup](screenshots/vscode.jpg)  
 *Figure 6. Workspace structure opened inside VS Code.*
@@ -150,22 +151,24 @@ The project folder was opened in Visual Studio Code to verify workspace configur
 ---
 
 ### Step 7 — Create the Laravel Project
-A fresh Laravel project named `hello-laravel` was initialized using Composer:
+A fresh Laravel project named `contado-week2-laravel-setup` was initialized using Composer:
 
 ```PowerShell
 composer create-project laravel/laravel contado-week2-laravel-setup
 ```
 
+This successfully generated the base application structure and installed required dependencies.
+
 ---
 
 ### Step 8 — Start Development Server
-The local server was started using Artisan:
+The local development server was started using Artisan:
 
 ```powershell
 php artisan serve
 ```
 
-The application started listening on `http://127.0.0.1:8000`.
+The application started listening on http://127.0.0.1:8000.
 
 ![Artisan Serve](screenshots/run-laravel.php-artisan-serve.jpg)  
 *Figure 7. Laravel Artisan development server running.*
@@ -173,7 +176,7 @@ The application started listening on `http://127.0.0.1:8000`.
 ---
 
 ### Step 9 — Customize Application Homepage
-The landing page was customized by modifying `resources/views/welcome.blade.php`. Custom CSS and dynamic Carbon date formatting were included to present student metadata cleanly.
+The landing page was customized by modifying `resources/views/welcome.blade.php`. Custom CSS and dynamic Carbon date formatting were included to present student ( Contado I, Denzelle A..) metadata cleanly.
 
 ![Custom Homepage](screenshots/homepage.png)  
-*Figure 8. Customized Laravel application landing page.*
+*Figure 8. Customized Laravel application homepage page.*
