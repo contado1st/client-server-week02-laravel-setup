@@ -84,3 +84,96 @@ This confirmed that PHP 8.4.21 was active and properly recognized in the system 
 
 ![PHP Version](screenshots/php-version.jpg)  
 *Figure 1. Verification of PHP 8.4.21 installation.*
+
+---
+
+### Step 2 — Verify Composer Installation
+Composer was verified using:
+
+```PowerShell
+composer -v
+```
+
+This output confirmed Composer version 2.9.5 was operating on top of the PHP runtime.
+
+[Composer Version](screenshots/composer-version.jpg)  
+*Figure 2. Verification of Composer dependency manager.
+
+---
+
+### Step 3 — Verify Laravel Installer
+The global Laravel CLI tool was verified using:
+
+```powershell
+laravel -V
+```
+
+This confirmed Laravel Installer 5.27.0 was installed and ready to scaffold new applications.
+
+![Laravel Version](screenshots/laravel-version.jpg)  
+*Figure 3. Verification of global Laravel CLI.*
+
+---
+
+### Step 4 — Verify Git Version Control
+Git installation and system identity were verified using:
+
+```powershell
+git --version
+```
+
+![Git Version](screenshots/git-version.jpg)  
+*Figure 4. Verification of Git version control system.*
+
+---
+
+### Step 5 — Verify MySQL Server
+MySQL binary availability was verified in the terminal using:
+
+```powershell
+mysql --version
+```
+
+This confirmed MySQL Community Server 8.0.44 was properly bound to the system PATH.
+
+![MySQL Version](screenshots/mysql-version.jpg)  
+*Figure 5. Verification of MySQL database server.*
+
+---
+
+### Step 6 — Verify Visual Studio Code Setup
+The project folder was opened in Visual Studio Code to verify workspace configurations and workspace extensions.
+
+![VS Code Setup](screenshots/vscode.jpg)  
+*Figure 6. Workspace structure opened inside VS Code.*
+
+---
+
+### Step 7 — Create the Laravel Project
+A fresh Laravel project named `hello-laravel` was initialized using Composer:
+
+```PowerShell
+composer create-project laravel/laravel contado-week2-laravel-setup
+```
+
+---
+
+### Step 8 — Start Development Server
+The local server was started using Artisan:
+
+```powershell
+php artisan serve
+```
+
+The application started listening on `http://127.0.0.1:8000`.
+
+![Artisan Serve](screenshots/run-laravel.php-artisan-serve.jpg)  
+*Figure 7. Laravel Artisan development server running.*
+
+---
+
+### Step 9 — Customize Application Homepage
+The landing page was customized by modifying `resources/views/welcome.blade.php`. Custom CSS and dynamic Carbon date formatting were included to present student metadata cleanly.
+
+![Custom Homepage](screenshots/homepage.jpgS)  
+*Figure 8. Customized Laravel application landing page.*
