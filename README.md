@@ -209,3 +209,54 @@ Below is a quick reference table of the core commands executed during the enviro
 
 ---
 
+## 7 - 8. Troubleshooting & Common Issues
+
+During the environment setup process, the following technical issue was encountered and subsequently resolved:
+
+### Issue 1: MySQL Command Not Recognized (PATH Error)
+**Problem:** 
+When attempting to verify the MySQL installation using the `mysql --version` command, PowerShell returned a "CommandNotFoundException" error, stating that `mysql` was not recognized as the name of a cmdlet, function, script file, or operable program.
+
+**Cause:** 
+The MySQL binary folder was not automatically appended to the Windows System Environment `PATH` variable during the initial software installation. As a result, the terminal could not locate the `mysql.exe` executable file when the command was called globally.
+
+**Solution:**
+1. **Locate the Binary:** Navigated through the file explorer to find the exact MySQL `bin` directory path. Based on the installation, this was located at `C:\Program Files\MySQL\MySQL Server 8.0\bin`.
+2. **Access Environment Variables:** Pressed the Windows key, typed "Edit the system environment variables," and pressed Enter.
+3. **Edit System Path:** In the System Properties window, clicked the **Environment Variables...** button. Under the "System variables" section, scrolled down to select the **Path** variable and clicked **Edit**.
+4. **Add the Path:** Clicked **New** and pasted the exact directory path (`C:\Program Files\MySQL\MySQL Server 8.0\bin`). Clicked **OK** on all three windows to save the configuration.
+5. **Restart Terminal:** Completely closed Visual Studio Code and all active PowerShell windows. Reopened the terminal to force the system to load the newly updated environment variables.
+6. **Verify Resolution:** Executed `mysql --version` once more, which successfully returned the active MySQL version details without error.
+
+---
+
+### Issue 2: Composer Project Creation Fails (Missing PHP Extensions)
+**Problem:** 
+When executing the `composer create-project laravel/laravel` command, the terminal throws a red error stating that a requested PHP extension (such as `ext-zip`, `ext-fileinfo`, or `ext-mbstring`) is missing from the system.
+
+**Cause:** 
+By default, standard PHP installations on Windows have several extensions disabled in the configuration file to improve security and performance. Composer requires some of these to unpack and read downloaded package archives.
+
+**Solution:**
+1. **Locate Configuration File:** Navigate to the main PHP installation directory and locate the `php.ini` file (if only `php.ini-development` exists, copy and rename it to `php.ini`).
+2. **Edit the File:** Open `php.ini` in Visual Studio Code or Notepad.
+3. **Enable Extensions:** Press `Ctrl + F` to search for the required extensions (e.g., `;extension=zip`, `;extension=fileinfo`). 
+4. **Uncomment:** Remove the semicolon (`;`) at the very beginning of the line to enable the extension (it should now look like `extension=zip`).
+5. **Save and Retry:** Save the file, restart the terminal to reload the PHP configuration, and re-run the Composer command.
+
+---
+
+### Issue 3: Artisan Serve Fails (Port 8000 Already in Use)
+**Problem:** 
+Running `php artisan serve` results in a connection error, or the terminal displays a message indicating that it cannot bind to `127.0.0.1:8000` because the socket is already in use.
+
+**Cause:** 
+Another application on the system (such as Skype, a different local server like XAMPP, or an orphaned, background PHP process from a previously closed terminal) is already occupying network port 8000.
+
+**Solution:**
+* **Option A (Change Port):** Instruct Artisan to serve the application on an alternate port by appending the `--port` flag:
+  ```powershell
+  php artisan serve --port=8080
+  ```
+
+---
