@@ -209,7 +209,7 @@ Below is a quick reference table of the core commands executed during the enviro
 
 ---
 
-## 7 - 8. Troubleshooting & Common Issues
+## 7 - 8. Troubleshooting & faced Issues
 
 During the environment setup process, the following technical issue was encountered and subsequently resolved:
 
