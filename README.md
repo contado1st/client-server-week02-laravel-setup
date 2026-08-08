@@ -20,6 +20,7 @@ Client-server architecture is essential to modern web applications because it se
 
 ### Purpose of the Project
 Prepared as part of the ITST 302 Client-Server Technologies course, this setup activity focuses on building and verifying a complete local development environment for the client-server-week02-laravel-setup project. The main goal is to assemble a functional stack including PHP 8.4, Composer, the global Laravel CLI, MySQL, and Git. The overall workflow involves initializing a new Laravel project, hosting it on the local Artisan server, updating resources/views/welcome.blade.php to present customized student information, and documenting each stage across a public GitHub repository.
+
 ---
 
 ## 3. Objectives
