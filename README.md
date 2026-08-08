@@ -68,3 +68,13 @@ Git 2.54.0.windows.1 was configured for version control to track project iterati
 
 ### MySQL Database
 MySQL Community Server 8.0.45 was configured alongside system PATH variables to provide relational database capabilities.
+
+---
+
+## 5. Installation & Verification Steps
+
+### Step 1 — Verify PHP Version
+The PHP CLI runtime was verified in PowerShell:
+
+```powershell
+php -v
