@@ -180,3 +180,32 @@ The landing page was customized by modifying `resources/views/welcome.blade.php`
 
 ![Custom Homepage](screenshots/homepage.png)  
 *Figure 8. Customized Laravel application homepage page.*
+
+---
+
+## 6. Command Reference & Summary
+
+### Essential Terminal Commands
+
+Below is a quick reference table of the core commands executed during the environment verification and project setup process:
+
+| Tool / Framework | Command | Primary Purpose |
+| :--- | :--- | :--- |
+| **PHP** | `php -v` | Verifies active CLI runtime and version |
+| **Composer** | `composer -v` | Verifies Composer dependency manager installation |
+| **Laravel CLI** | `laravel -v` | Checks global Laravel installer tool |
+| **Git** | `git --version` | Confirms Git version control system availability |
+| **MySQL** | `mysql --version` | Validates MySQL server system PATH binding |
+| **Composer Scaffolding** | `composer create-project laravel/laravel <project-name>` | Initializes a fresh Laravel project workspace |
+| **Laravel Artisan** | `php artisan serve` | Starts the local HTTP development server (`http://127.0.0.1:8000`) |
+
+---
+
+### Key Technical Takeaways
+
+* **Environment Pre-checks:** Validating individual runtime binaries (`php`, `composer`, `mysql`) before project creation prevents version mismatches and missing path errors during package resolution.
+* **Artisan Serve Lifecycle:** Running `php artisan serve` initiates PHP's built-in web server to route web traffic directly to the `public/index.php` entry point.
+* **Blade Templating Flexibility:** Modifying `resources/views/welcome.blade.php` enables custom front-end presentation using Tailwind CSS utilities while leveraging Laravel's dynamic view rendering.
+
+---
+
