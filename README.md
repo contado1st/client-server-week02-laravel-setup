@@ -260,3 +260,19 @@ Another application on the system (such as Skype, a different local server like 
   ```
 
 ---
+
+## 9. Screenshots Summary
+
+| Screenshot Asset | Visual Preview | Description |
+| :--- | :---: | :--- |
+| **PHP Version** | ![PHP](screenshots/php-version.jpg) | Verifies PHP 8.4.21 CLI installation in PowerShell. |
+| **Composer Version** | ![Composer](screenshots/composer-version.jpg) | Displays Composer 2.9.5 package manager setup. |
+| **Laravel Version** | ![Laravel](screenshots/laravel-version.jpg) | Displays global Laravel Installer version 5.25.1. |
+| **Git Version** | ![Git](screenshots/git-version.jpg) | Verifies Git 2.54.0.windows.1 version control environment. |
+| **MySQL Version** | ![MySQL](screenshots/mysql-version.jpg) | Confirms MySQL Community Server 8.0.45 installation. |
+| **VS Code Setup** | ![VS Code](screenshots/vscode.jpg) | Shows the project workspace structure opened in Visual Studio Code. |
+| **Project Structure** | ![Project Structure](screenshots/project-structure.jpg) | Displays the generated `contado-week2-laravel-setup` project directory. |
+| **Artisan Serve** | ![Artisan](screenshots/run-laravel.php-artisan-serve.jpg) | Demonstrates `php artisan serve` running and listening on port 8000. |
+| **Homepage** | ![Homepage](screenshots/homepage.png) | Displays the final customized Laravel homepage view for my project |
+
+---
